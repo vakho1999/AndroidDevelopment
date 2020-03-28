@@ -24,7 +24,9 @@
         android:scaleType="centerCrop"
         app:srcCompat="@mipmap/cool_backgrounds"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="30dp"
+        tools:layout_editor_absoluteY="30dp"/>
+
+    
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -32,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
-        tools:ignore="ExtraText,MissingConstraints"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="349dp">
 
