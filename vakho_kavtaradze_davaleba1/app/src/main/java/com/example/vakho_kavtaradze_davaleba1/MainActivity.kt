@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             if(password.text.toString().isEmpty()){
                 Toast.makeText(this,"You are missing Password Field",Toast.LENGTH_SHORT).show()
             }
-            else{
+            if (email.text.toString().isNotEmpty() and password.text.toString().isNotEmpty()){
                 Toast.makeText(this,"Congrats you are logined in",Toast.LENGTH_SHORT).show()
             }
         }
