@@ -1,0 +1,28 @@
+package com.example.vakhtangi_kavtaradze_davaleba5
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.fragment_default.*
+
+/**
+ * A simple [Fragment] subclass.
+ */
+class DefaultFragment : Fragment() {
+    private lateinit var rootview: View
+    lateinit var model: ViewPagerModel
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        rootview = inflater.inflate(R.layout.fragment_default, container, false)
+        init()
+        return rootview
+    }
+    private fun init(){
+        Glide.with(rootview).load(model.image).into(Image);
+    }
+}
