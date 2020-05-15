@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun init(Users:Serializer){
     val items = mutableListOf<ViewPagerModel>()
     for(index in Users.data.indices){
-        items.add(ViewPagerModel(Users.data[index].avatar)) //TODO firstname,lastname,email
+        val Item = Users.data[index]
+        items.add(ViewPagerModel(Item.id,Item.email,Item.firstName,Item.LastName,Item.avatar))
+        d("var","${items}")
     }
 
     viewPager.adapter = ViewPagerAdapter(supportFragmentManager,items)
