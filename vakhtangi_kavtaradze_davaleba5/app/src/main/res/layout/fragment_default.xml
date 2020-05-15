@@ -27,15 +27,24 @@
             <TextView
                 android:text="Your Firstname"
                 android:id="@+id/firstname"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:text="Your Lastname"
                 android:id="@+id/lastname"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic"
+                android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
                 android:text="Your Email"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic"
+                android:textSize="15sp"
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
