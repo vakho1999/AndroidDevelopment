@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/corona"
+android:scaleType="centerCrop">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="240dp"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/SecondButton"
+        android:text="Log in"
+        android:layout_marginHorizontal="100dp"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="40dp"
+        android:background="#EFEBF8"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="100dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light"
+        android:textColorHighlight="#0F100F"
+        android:textColorHint="#FFFFFF">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="20dp"
+        android:hint="Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@android:color/primary_text_light"
+        android:textColorHighlight="#121313"
+        android:textColorHint="#FFFFFF">
+
+    </EditText>
+
+</LinearLayout>
+
+
+</LinearLayout>
