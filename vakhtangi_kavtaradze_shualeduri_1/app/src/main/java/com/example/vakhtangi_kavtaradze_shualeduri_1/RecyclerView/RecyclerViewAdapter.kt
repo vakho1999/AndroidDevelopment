@@ -34,7 +34,7 @@ class RecyclerViewAdapter(private val items:ArrayList<ItemModel>, private val ac
             itemView.image.setImageResource(model.image)
             itemView.text1.text = model.Country
             itemView.text2.text = model.deaths
-            itemView.text3.text = model.population.toString()
+            itemView.text3.text = "Population: "+model.population.toString()
 
         }
     }
