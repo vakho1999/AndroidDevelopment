@@ -19,11 +19,12 @@ import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {
     val items = ArrayList<ItemModel>()
-    private lateinit var adapter: RecyclerViewAdapter
+    lateinit var adapter: RecyclerViewAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+        d("Info2: ","aqamde modis")
       Dataloader.getRequest("statistics", object : CustomCallback {
          override fun onSuccess(result: String){
 
@@ -41,7 +42,7 @@ class SecondActivity : AppCompatActivity() {
                      items.add(
                          ItemModel(
                              R.mipmap.ic_launcher,
-                             item.country,
+                             "Country"+item.country,
                              item.deaths,
                              item.population
                          )
@@ -52,12 +53,18 @@ class SecondActivity : AppCompatActivity() {
 
             }
         })
+
+
         init()
     }
     private fun init(){
+        items.add(ItemModel(R.mipmap.corona,"Russia","10000",10000))
+        adapter.notifyDataSetChanged()
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = RecyclerViewAdapter(items,this)
         recyclerView.adapter = RecyclerViewAdapter(items,this)
+
+
         SecondButton.setOnClickListener(){
             OpenMainActivaty()
         }

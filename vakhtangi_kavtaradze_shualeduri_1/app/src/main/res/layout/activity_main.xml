@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@mipmap/corona"
 android:scaleType="centerCrop">
@@ -30,6 +31,7 @@ android:scaleType="centerCrop">
         android:layout_marginHorizontal="100dp"
         android:hint="Username"
         android:inputType="text"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@android:color/primary_text_light"
         android:textColorHighlight="#0F100F"
@@ -44,11 +46,13 @@ android:scaleType="centerCrop">
         android:layout_marginHorizontal="100dp"
         android:layout_marginVertical="20dp"
         android:hint="Password"
+        android:text=""
         android:inputType="text"
         android:textAlignment="center"
         android:textColor="@android:color/primary_text_light"
         android:textColorHighlight="#121313"
-        android:textColorHint="#FFFFFF">
+        android:textColorHint="#FFFFFF"
+        tools:ignore="TextFields">
 
     </EditText>
 

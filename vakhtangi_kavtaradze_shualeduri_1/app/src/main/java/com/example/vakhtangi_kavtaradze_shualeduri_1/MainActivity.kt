@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private fun init(){
 
     SecondButton.setOnClickListener(){
-        if(Username.text.equals("nika") and Password.text.equals("tabatadze")){
+        if(Username.text.contains("nika") and Password.text.contains("tabatadze")){
             OpenSecondActivity()
         }else{
             Toast.makeText(this,"Oops Incorrect password or Username",Toast.LENGTH_SHORT).show()
