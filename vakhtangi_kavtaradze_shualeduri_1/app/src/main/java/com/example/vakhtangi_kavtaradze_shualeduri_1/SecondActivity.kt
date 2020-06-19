@@ -41,20 +41,21 @@ class SecondActivity : AppCompatActivity() {
                      val item = Serialized.data[index]
                      items.add(
                          ItemModel(
-                             R.mipmap.ic_launcher,
-                             "Country"+item.country,
-                             item.deaths,
+
+                             R.mipmap.korona,
+                             "Country: "+item.country,
+                             "Deaths: "+item.deaths,
                              item.population
                          )
                      )
-                     adapter.notifyItemInserted(items.size - 1)
+                     
                  }
              }
 
             }
         })
 
-
+        adapter.notifyDataSetChanged()
         init()
     }
     private fun init(){
